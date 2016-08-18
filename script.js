@@ -7,17 +7,34 @@ for (var i = 0; i < count; i++) {
 function saySomething() {
     document.writeln("Five");
 }
+//==============================================================
+var str = "hello";
+document.writeln(str.slice(4));
 
-// var word = "hello";
-//  var last = word.charAt(word.length - 1);
-// function lastLetter() {
-   
-//     // alert('The last character is:' + last);
-//     document.writeIn("The last letter is " + last);
-// }
+
+//==============================================================
 
 var square = function(x) {
   return x * x;
 };
 document.writeln(square(3));
 document.writeln(square(5));
+
+//==============================================================
+
+function negate(neg){
+    return neg*-1;
+
+}
+
+document.writeln(negate(8));
+
+//===============================================================
+
+function toArray(separator) {
+  var args = Array.prototype.slice.call(arguments, 1);
+  return args.join(separator);
+}
+document.writeln(toArray(",", 1, 4, 5))
+
+//===============================================================
