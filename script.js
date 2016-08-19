@@ -27,14 +27,17 @@ function negate(neg){
 
 }
 
+document.writeln(negate(5));
 document.writeln(negate(8));
 
-//===============================================================
+//==============================================================
 
 function toArray(separator) {
   var args = Array.prototype.slice.call(arguments, 1);
   return args.join(separator);
 }
-document.writeln(toArray(",", 1, 4, 5))
+toArray(",", 1, 4, 5) 
+document.writeln(toArray(" , ", 1, 4, 5));
+document.writeln(toArray(" , ", 8, 9, 10));
 
 //===============================================================
